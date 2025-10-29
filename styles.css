@@ -7,6 +7,7 @@
 :root {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
     width: 100vw;
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: auto 1fr;
 }
 
 img {
@@ -26,10 +27,14 @@ li {
     list-style: none;
 }
 
+.pfp {
+    border-radius: 100%;
+}
+
 .dashboard {
     font-weight: 500;
-    color: white;
-    background-color: rgb(0, 175, 255);
+    color: rgb(250, 250, 250);
+    background-color: rgb(0, 150, 240);
     padding: 25px;
     grid-row: 1 / span 2;
 }
@@ -41,9 +46,76 @@ li {
 
 .dashboard-link {
     font-size: 1.4rem;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .dashboard-link:nth-child(7) {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
+}
+
+.header {
+    background-color: white;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    height: 2rem;
+    width: 30%;
+    display: flex;
+    gap: 20px;
+}
+
+#search {
+    appearance: none;
+    background-color: rgb(230, 230, 240);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    flex: 1;
+}
+
+.small {
+    width: 50px;
+    height: 50px;
+}
+
+.personal {
+    display: flex;
+    gap: 20px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.large {
+    width: 100px;
+    height: 100px;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.button {
+    font-size: 1.4rem;
+    color: white;
+    background-color: rgb(0, 150, 240);
+    margin-left: 50px;
+    border: none;
+    border-radius: 35px;
+    padding: 10px 35px;
 }
