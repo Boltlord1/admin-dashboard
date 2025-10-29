@@ -32,23 +32,27 @@ li {
 }
 
 .dashboard {
-    font-weight: 500;
     color: rgb(250, 250, 250);
     background-color: var(--accent-color);
+    font-weight: 500;
     padding: 25px;
     position: relative;
     z-index: 1;
     grid-row: 1 / span 2;
+    line-height: 1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-auto-rows: 50px;
+    align-items: center;
+    gap: 10px;
 }
 
 .dashboard-logo {
     font-size: 2rem;
-    margin-bottom: 60px;
 }
 
 .dashboard-link {
     font-size: 1.4rem;
-    margin-top: 15px;
 }
 
 .dashboard-link:nth-child(7) {
@@ -69,6 +73,11 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.search-button {
+    appearance: none;
+    border: none;
 }
 
 .search-bar {
@@ -205,4 +214,39 @@ li {
 .user h5:last-child {
     color: rgb(60, 60, 60);
     font-weight: normal;
+}
+
+.dashboard img {
+    background-color: inherit;
+    display: inline;
+    height: 1.5em;
+    width: 1.5em;
+    justify-self: center;
+}
+
+.dashboard img:first-child {
+    height: 3em;
+    width: 3em;
+}
+
+.search-button img {
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+}
+
+.bolt {
+    content: url(assets/pfp-sta.jpg);
+}
+
+.tegan {
+    content: url(assets/pfp-dof.jpg);
+}
+
+.kendall {
+    content: url(assets/pfp-swd.jpg);
+}
+
+.alex {
+    content: url(assets/pfp-sfv.jpg);
 }
