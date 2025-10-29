@@ -143,6 +143,7 @@ li {
 
 .outer > h2 {
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .content > div:first-child {
@@ -161,6 +162,15 @@ li {
     border-left: 5px solid orange;
     border-radius: 6px;
     padding: 40px 20px;
+}
+
+.project h2 {
+    font-weight: 500;
+}
+
+.project p {
+    margin-top: 10px;
+    color: rgb(80, 80, 80);
 }
 
 .announcements {
@@ -191,7 +201,6 @@ li {
 
 .trending {
     background-color: white;
-    margin-top: 10px;
     border-radius: 10px;
     padding: 30px;
     display: flex;
